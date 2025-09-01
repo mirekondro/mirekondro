@@ -68,7 +68,7 @@ function App() {
           <p>
   Got a project in mind or want to collaborate? Feel free to reach out – I’d love to hear from you! 
   You can email me at 
-  <a href="mailto:mirekondro@post.cz"> mirekondro@post.cz</a>
+  <a href="mailto:mirekondro@post.cz"> mirekondro@post.cz </a>
   or call me at 
   <a href="tel:+420604164894"> +420 604 164 894</a> (Czech Republic) 
   or 
