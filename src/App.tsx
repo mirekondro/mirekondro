@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <div style={{ maxWidth: '800px', margin: '0 auto', padding: '32px' }}>
-        <h1>Miroslav Ondroušek</h1>
+        <h1 className='name'>Miroslav Ondroušek</h1>
 
         <h2>Software and Web Developer & Designer</h2>
 
@@ -29,7 +29,7 @@ function App() {
           I create modern web apps and interfaces that combine smart coding with thoughtful design, turning ideas into seamless digital experiences.
         </p>
 
-        <h1>What projects I worked on</h1>
+        <h1 className='projects'>What projects I worked on</h1>
         <div className='projects-list'>
           <ClickableBlock
             logo="/weroof-white.png"
@@ -44,9 +44,16 @@ function App() {
             subtitle="Final school project. Website and mobile app for food delivery service."
             onClick={() => window.open("https://feedy-three.vercel.app/", "_blank")}
           />
+
+          <ClickableBlock
+            logo="/lastel.png"
+            title="LASTEL POTS s.r.o."
+            subtitle="Vouchers for company selling pots and more."
+            onClick={() => window.open("https://lastel.cz/", "_blank")}
+          />
         </div>
 
-        <h1>Work experience</h1>
+        <h1 className='work'>Work experience</h1>
           <div className='experience-list'>
             <ClickableBlock
               logo="/blogic.png"
@@ -64,15 +71,15 @@ function App() {
             />
           </div>
 
-          <h1>Contact</h1>
+          <h1 className='contact'>Contact</h1>
           <p>
   Got a project in mind or want to collaborate? Feel free to reach out – I’d love to hear from you! 
   You can email me at 
   <a href="mailto:mirekondro@post.cz"> mirekondro@post.cz </a>
   or call me at 
-  <a href="tel:+420604164894"> +420 604 164 894</a> (Czech Republic) 
+  <a href="tel:+420604164894"> +420 604 164 894</a> (🇨🇿)
   or 
-  <a href="tel:+4531814408"> +45 31814408</a> (Denmark).
+  <a href="tel:+4531814408"> +45 31814408</a> (🇩🇰).
 </p>
 
       </div>
