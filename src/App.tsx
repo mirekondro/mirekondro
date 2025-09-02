@@ -1,8 +1,15 @@
-import { useState } from 'react'
 import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from 'react-icons/fa6'
 import './App.css'
 
-function ClickableBlock({ logo, title, subtitle, subtitle2, onClick }) {
+interface ClickableBlockProps {
+  logo: string;
+  title: string;
+  subtitle: string;
+  subtitle2?: string;
+  onClick: () => void;
+}
+
+function ClickableBlock({ logo, title, subtitle, subtitle2, onClick }: ClickableBlockProps) {
   return (
     <div className="clickable-block" onClick={onClick}>
       <img src={logo} alt={title} className="logo" />
@@ -16,8 +23,6 @@ function ClickableBlock({ logo, title, subtitle, subtitle2, onClick }) {
 }
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div style={{ maxWidth: '800px', margin: '0 auto', padding: '32px' }}>
@@ -97,4 +102,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
