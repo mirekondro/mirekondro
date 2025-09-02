@@ -2,14 +2,16 @@ import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from 'react-icons/fa6'
 import './App.css'
 
 interface ClickableBlockProps {
-  logo: string;
-  title: string;
-  subtitle: string;
-  subtitle2?: string;
-  onClick: () => void;
+  logo: string
+  title: string
+  subtitle: string
+  subtitle2?: string
+  onClick: () => void
 }
 
-function ClickableBlock({ logo, title, subtitle, subtitle2, onClick }: ClickableBlockProps) {
+import React from 'react';
+
+function ClickableBlock({ logo, title, subtitle, subtitle2, onClick }: ClickableBlockProps): React.JSX.Element {
   return (
     <div className="clickable-block" onClick={onClick}>
       <img src={logo} alt={title} className="logo" />
@@ -22,7 +24,7 @@ function ClickableBlock({ logo, title, subtitle, subtitle2, onClick }: Clickable
   )
 }
 
-function App() {
+function App(): React.JSX.Element {
   return (
     <>
       <div style={{ maxWidth: '800px', margin: '0 auto', padding: '32px' }}>
